@@ -1,0 +1,14 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Hello, admin {{login}}</h1>
+        <table>
+            <tr><th>Логин</th><th>Пароль</th></tr>
+            {{#each users}}
+            <tr><td>{{this.name}}</td><td>{{this.password}}</td></tr>
+            {{/each}}
+        </table>
+    </body>
+</html>
